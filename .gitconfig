@@ -1,0 +1,6 @@
+[alias]
+	pb = push -u origin HEAD
+	bm = !git fetch origin && git merge origin/main
+	cap = "!f() { git add -A && git commit -m \"$1\" && git push; }; f"
+	cn = !git checkout -b
+	aliases = !git config --get-regexp alias
