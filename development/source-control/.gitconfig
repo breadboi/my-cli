@@ -4,4 +4,4 @@
 	cap = "!f() { git add -A && git commit -m \"$1\" && git push; }; f"
 	cn = !git checkout -b
 	aliases = !git config --get-regexp alias
-	wta '!f() { git worktree add ../$(basename "$PWD")-worktrees/$1 $1; }; f'
+	wta = '!f() { git worktree add ../$(basename "$PWD")-worktrees/$1 $1; }; f'
